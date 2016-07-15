@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>GuessingGame</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="guessing.css" type="text/css">
+		<script src="guessingGame.js"></script>
+		<script src="jquery-1.12.4.min.js"></script>
+	</head>
+
+	<body align="center">
+	<h1>Guessing Game</h1>
+
+	<div id="mainpart">
+	<h3>Good Luck!!!</h3>
+		<label>Guess a Number!
+			<input id="guess" type="text" placeholder="1 through 100">
+		</label>
+		<div id="action"></div>
+		<p>
+			<button id="submitButton" type="button" onclick="runGame()">Submit!</button>
+		</p>
+		<p>
+			<button class="other button" type="button" onclick="reloadPage()">Play Again</button> <button class="other button" type="button" onclick="giveHint()">Hint</button>
+		</p>
+		<div id='guessesleft'></div>
+	</div>
+	</body>
+</html>
